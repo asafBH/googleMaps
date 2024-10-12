@@ -1,14 +1,49 @@
-     /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-       #map {
-        height: 100%;
-      }
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-     
+/* Always set the map height explicitly to define the size of the div element that contains the map. */
+#map {
+  height: 100%;
+  border: 2px solid #ccc; /* Border around the map */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif; /* Custom font for better readability */
+  margin: 0;
+  padding: 20px; /* Adds padding around the content */
+  background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+/* Header styles */
+header {
+  text-align: center; /* Center the header content */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+header h1 {
+  font-size: 2em; /* Larger font size for the title */
+  color: #333; /* Darker color for contrast */
+}
+
+/* Footer styles */
+footer {
+  text-align: center; /* Center the footer content */
+  margin-top: 20px; /* Space above the footer */
+  color: #666; /* Lighter color for the footer */
+}
+
+/* Add hover effect for interactive elements (if any are added) */
+button:hover,
+a:hover {
+  background-color: #e0e0e0; /* Change background on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
